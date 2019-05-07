@@ -1,1 +1,36 @@
-theme: jekyll-theme-midnight
+# Site settings
+title: nezorfla.me
+description: "All about Go and other cool tech stuff."
+url: "https://nezorfla.me" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+
+author:
+  name: "Ilya Danilkin"
+  email: nezorflame@gmail.com
+  twitter_username: nezorflame
+  github_username: nezorflame
+  linkedin_username: nezorflame
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+plugins:
+  - jekyll-paginate
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
